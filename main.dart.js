@@ -26110,7 +26110,7 @@ xZ:function xZ(a,b,c){var _=this
 _.d=a
 _.e=b
 _.f=!1
-_.r="ver 0.1.2"
+_.r="ver 0.1.4"
 _.w=470
 _.y=_.x=$
 _.a=null
@@ -87288,9 +87288,17 @@ s=r.a.d.a
 if(s!=null)p.push(A.c2(A.eh(A.bw(s,q,q,q,B.A4,q,q,q),q,q),q,400))
 return A.cx(p,B.I,B.du,B.H)}}
 A.a26.prototype={
-$1(a){var s,r=this.b.files
-if(r!=null&&r.length===1){s=this.a
-s.S(new A.a25(s,r[0]))}},
+$1(a){var s,r,q,p,o=this.b.files
+if(o!=null&&o.length===1){s=o[0]
+r=this.a
+q=r.a.c
+p=q.b
+if(p!=null)if(p.length!==0){p=s.name
+p.toString
+q=p===q.a}else q=!1
+else q=!1
+if(q)return
+r.S(new A.a25(r,s))}},
 $S:68}
 A.a25.prototype={
 $0(){var s=this.a.a.c,r=this.b,q=r.name
@@ -87300,9 +87308,17 @@ s.b=""
 s.c=r},
 $S:0}
 A.a28.prototype={
-$1(a){var s,r=this.b.files
-if(r!=null&&r.length===1){s=this.a
-s.S(new A.a27(s,r[0]))}},
+$1(a){var s,r,q,p,o=this.b.files
+if(o!=null&&o.length===1){s=o[0]
+r=this.a
+q=r.a.d
+p=q.b
+if(p!=null)if(p.length!==0){p=s.name
+p.toString
+q=p===q.a}else q=!1
+else q=!1
+if(q)return
+r.S(new A.a27(r,s))}},
 $S:68}
 A.a27.prototype={
 $0(){var s=this.a.a.d,r=this.b,q=r.name
@@ -87556,56 +87572,60 @@ var $async$no=A.Z(function(a,b){if(a===1)return A.V(b,r)
 while(true)switch(s){case 0:if(!p.ch){q=!0
 s=1
 break}o=p.CW
-if(o.c==null){p.S(new A.a5o(p))
+if(o.c==null){n=o.b
+n=n==null||n.length===0}else n=!1
+if(n){p.S(new A.a5o(p))
 q=!1
 s=1
-break}n=new A.a29()
-m=A.aZ("url1")
-l=A.aZ("result1")
-p.S(new A.a5p(p))
-k=o.a
-k.toString
-e=n
-d=k
-s=4
-return A.a5(o.Wu(),$async$no)
-case 4:s=3
-return A.a5(e.wc(d,b,new A.a5q(p),new A.a5r(p)),$async$no)
-case 3:j=b
-k=j.a
-i=j.b
-l.b=k
-m.b=i
-if(J.c(l.aP(),!0)){k=m.aP()
-o.b=k}else{q=!1
-s=1
-break}i=p.cx
-s=i.c!=null?5:7
+break}m=new A.a29()
+l=A.aZ("url1")
+k=A.aZ("result1")
+s=o.c!=null?3:4
 break
-case 5:h=A.aZ("url2")
-g=A.aZ("result2")
-p.S(new A.a5s(p))
-o=i.a
-o.toString
-e=n
-d=o
-s=9
-return A.a5(i.Wu(),$async$no)
-case 9:s=8
-return A.a5(e.wc(d,b,new A.a5t(p),new A.a5u(p)),$async$no)
-case 8:f=b
-o=f.a
-k=f.b
-g.b=o
-h.b=k
-if(J.c(g.aP(),!0))i.b=h.aP()
+case 3:p.S(new A.a5p(p))
+n=o.a
+n.toString
+e=m
+d=n
+s=6
+return A.a5(o.Wu(),$async$no)
+case 6:s=5
+return A.a5(e.wc(d,b,new A.a5q(p),new A.a5r(p)),$async$no)
+case 5:j=b
+n=j.a
+i=j.b
+k.b=n
+l.b=i
+if(J.c(k.aP(),!0))o.b=l.aP()
 else{q=!1
 s=1
-break}s=6
+break}case 4:n=p.cx
+s=n.c!=null?7:9
 break
-case 7:i.b=k
-i.a=o.a
-case 6:q=!0
+case 7:h=A.aZ("url2")
+g=A.aZ("result2")
+p.S(new A.a5s(p))
+o=n.a
+o.toString
+e=m
+d=o
+s=11
+return A.a5(n.Wu(),$async$no)
+case 11:s=10
+return A.a5(e.wc(d,b,new A.a5t(p),new A.a5u(p)),$async$no)
+case 10:f=b
+o=f.a
+i=f.b
+g.b=o
+h.b=i
+if(J.c(g.aP(),!0))n.b=h.aP()
+else{q=!1
+s=1
+break}s=8
+break
+case 9:i=n.b
+if(i==null||i.length===0){n.b=o.b
+n.a=o.a}case 8:q=!0
 s=1
 break
 case 1:return A.W(q,r)}})
@@ -88090,7 +88110,7 @@ r===$&&A.a()}else{r=l.ax
 r===$&&A.a()
 o=l.ch
 o===$&&A.a()
-o=A.j(r)+" , "+A.j(o)
+o=A.j(r)+" / "+A.j(o)
 r=o}r=A.bw(r,n,n,n,n,n,n,n)
 return A.i8(!1,!0,A.cx(A.b([A.cF(n,A.xT(!1,n,n,n,!0,n,n,!1,n,n,n,!1,n,n,n,A.bw(l.y+" ~ "+l.z,n,n,n,n,n,n,n),n,r,A.ho(n,B.GC,16,new A.ajQ(m,l,b),n,n),n),B.u,k,n,n,n,n,n,n,n,n,s),B.F3],t.p),B.I,B.A,B.H),n,!0,n,n,n,n,n,n,n,n,n,n,n,new A.ajR(m,a,l),n,n,n,n)},
 $S:190}
@@ -88221,7 +88241,7 @@ d===$&&A.a()
 if(d==null)d=""
 c=b.CW
 c===$&&A.a()
-return A.av(["noticeId",a,"siteId",s,"userId",r,"message",q,"orgMsg",p,"fgColor",o,"bgColor",n,"fontSize",m,"playSpeed",l,"startTime",k,"endTime",j,"hostIdList",i,"selectedLangList",h,"url",g,"reverseUrl",f,"filename",e,"reverseFilename",d,"contentsType",c.a],t.N,t.z)},
+return A.av(["noticeId",a,"siteId",s,"userId",r,"message",q,"orgMsg",p,"fgColor",o,"bgColor",n,"fontSize",m,"playSpeed",l,"startTime",k,"endTime",j,"hostIdList",i,"selectedLangList",h,"url",g,"reverseUrl",f,"fileName",e,"reverseFileName",d,"contentsType",c.a],t.N,t.z)},
 alK(a){var s,r,q,p,o,n,m=this,l=J.as(a)
 m.a=l.h(a,"noticeId")
 m.b=l.h(a,"siteId")
@@ -88241,9 +88261,9 @@ s=l.h(a,"url")
 m.at=s==null?"":s
 s=l.h(a,"reverseUrl")
 m.ay=s==null?"":s
-s=l.h(a,"filename")
+s=l.h(a,"fileName")
 m.ax=s==null?"":s
-s=l.h(a,"reverseFilename")
+s=l.h(a,"reverseFileName")
 m.ch=s==null?"":s
 s=l.h(a,"contentsType")
 m.CW=B.HI[s==null?1:s]
